@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun May 23 12:53:08 2021
-
-@author: Sakshi
-"""
 # organize imports
 import cv2
 import tensorflow as tf
@@ -81,8 +75,6 @@ if __name__ == "__main__":
 
         # get the ROI
         roi = frame[top:bottom, right:left]
-
-        #cv2.imshow("Region", roi)
 
         # convert the roi to grayscale and blur it
         gray = cv2.cvtColor(roi, cv2.COLOR_BGR2GRAY)
