@@ -51,10 +51,7 @@ with tf.device('/gpu:0'):
     model.compile(loss='categorical_crossentropy',
         optimizer='adam',
         metrics=['accuracy']
-    )
-    
-
-    
+    )  
 
 
     train_datagen = ImageDataGenerator(
