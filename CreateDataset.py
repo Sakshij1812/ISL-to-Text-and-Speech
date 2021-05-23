@@ -71,9 +71,7 @@ if __name__ == "__main__":
 
         # get the ROI
         roi = frame[top:bottom, right:left]
-
-        #cv2.imshow("Region", roi)
-
+        
         # convert the roi to grayscale and blur it
         gray = cv2.cvtColor(roi, cv2.COLOR_BGR2GRAY)
         gray = cv2.GaussianBlur(gray, (7, 7), 0)
@@ -93,7 +91,7 @@ if __name__ == "__main__":
                 # segmented region
                 (thresholded, segmented) = hand
 
-                # find foreground in colour
+                # Get foreground in colour
                 masked = cv2.bitwise_and(roi, roi, mask=thresholded)
                 #cv2.imshow("Masked", masked)
 
