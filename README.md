@@ -4,6 +4,7 @@ This is a python project that uses CNN to extract Indian Sign Language from real
 CreateDataset.py -->
 I used a dataset downloaded from Kaggle : https://www.kaggle.com/vaishnaviasonawane/indian-sign-language-dataset
 But decided to add more to the dataset by creating my own images and saving it to the train/test/val files. 
+Different files need to be creeated for different signs. So the filename needs to be updated in the code for each Sign (Class)
 
 TrainCNN_Model.py -->
 Model is trained using CNN and saved in an H5 file called best_model.h5 and class indices is stored in classes.npy
